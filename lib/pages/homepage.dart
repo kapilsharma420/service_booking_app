@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:service_booking_app/pages/bookpage.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -430,26 +431,29 @@ class _HomepageState extends State<Homepage> {
                       
                             ),
                             SizedBox(width: 20),
-                            Container(
-                              width: 100,
-                              padding: EdgeInsets.all(5),
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10),
-                                color: Color(0xff284a79),
-                              ),
-                              child: Center(
-                                child: Text(
-                                  'Book Now',
-                                  
-                                  style: TextStyle(
+                            GestureDetector(
+                              onTap: () => Navigator.push(context, MaterialPageRoute(builder:  (context) => Bookpage())),
+                              child: Container(
+                                width: 100,
+                                padding: EdgeInsets.all(5),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10),
+                                  color: Color(0xff284a79),
+                                ),
+                                child: Center(
+                                  child: Text(
+                                    'Book Now',
                                     
-                                    color: Color.fromARGB(255, 232, 238, 247),
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w500,
+                                    style: TextStyle(
+                                      
+                                      color: Color.fromARGB(255, 232, 238, 247),
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w500,
+                                    ),
                                   ),
                                 ),
+                                                    
                               ),
-                      
                             ),
                           ],
                         ),
@@ -547,26 +551,29 @@ class _HomepageState extends State<Homepage> {
                        
                             ),
                             SizedBox(width: 20),
-                            Container(
-                              width: 100,
-                              padding: EdgeInsets.all(5),
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10),
-                                color: Color(0xff284a79),
-                              ),
-                              child: Center(
-                                child: Text(
-                                  'Book Now',
-                                  
-                                  style: TextStyle(
+                            GestureDetector(
+                                 onTap: () => Navigator.push(context, MaterialPageRoute(builder:  (context) => Bookpage())),
+                              child: Container(
+                                width: 100,
+                                padding: EdgeInsets.all(5),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10),
+                                  color: Color(0xff284a79),
+                                ),
+                                child: Center(
+                                  child: Text(
+                                    'Book Now',
                                     
-                                    color: Color.fromARGB(255, 232, 238, 247),
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w500,
+                                    style: TextStyle(
+                                      
+                                      color: Color.fromARGB(255, 232, 238, 247),
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w500,
+                                    ),
                                   ),
                                 ),
+                                                     
                               ),
-                       
                             ),
                           ],
                         ),
